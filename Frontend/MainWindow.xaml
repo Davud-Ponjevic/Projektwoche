@@ -1,0 +1,47 @@
+﻿<Window x:Class="ProjektWocheChat.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Chat Application" Width="1280" Height="720" Background="#ECECEC"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <!-- UI Elements for Login / Registration -->
+        <Grid Name="LoginGrid" Visibility="Visible">
+            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                <Label Content="Username:" FontWeight="Bold" FontSize="18"/>
+                <TextBox Name="UsernameTextBox" Width="200" Height="30" Margin="0,5,0,10" FontSize="14" Padding="5"/>
+                <StackPanel Orientation="Horizontal">
+                    <Button Content="Register" Name="RegisterButton" Width="100" Height="40" Margin="0,0,10,0" Click="RegisterButton_Click" Background="#4CAF50" Foreground="White" FontWeight="Bold"/>
+                    <Button Content="Login" Name="LoginButton" Width="100" Height="40" Click="LoginButton_Click" Background="#2196F3" Foreground="White" FontWeight="Bold"/>
+                </StackPanel>
+            </StackPanel>
+        </Grid>
+
+        <!-- UI Elements for Chat -->
+        <Grid Name="ChatGrid" Visibility="Collapsed">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Online-User-Liste -->
+            <ListBox Name="OnlineUsersListBox" Background="#ECECEC" FontWeight="Bold" FontSize="16" Margin="10"/>
+
+            <!-- Chat-Box -->
+            <ScrollViewer Grid.Column="1">
+                <ListBox Name="ChatListBox" Background="White" BorderBrush="#B0B0B0" BorderThickness="0,0,0,1" Margin="10"/>
+            </ScrollViewer>
+
+            <!-- Nachrichten-Eingabe -->
+            <StackPanel Grid.Column="2" VerticalAlignment="Bottom" Margin="10">
+                <ScrollViewer Height="Auto" VerticalScrollBarVisibility="Auto">
+                    <TextBox Name="MessageTextBox" Width="300" Height="Auto" MinHeight="30" Margin="0,0,0,5"
+         FontSize="14" Padding="5" AcceptsReturn="False" TextWrapping="Wrap"
+         KeyDown="MessageTextBox_KeyDown"/>
+
+                </ScrollViewer>
+                <Button Content="Send" Width="80" Height="30" Click="Send_Click" Background="#2196F3" Foreground="White" FontWeight="Bold" Margin="0,5,0,0"/>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>
