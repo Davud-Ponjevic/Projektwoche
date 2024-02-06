@@ -1,0 +1,10 @@
+C:\Github\Projektwoche\Backend\obj\Debug\net8.0\Backend.csproj.AssemblyReference.cache
+C:\Github\Projektwoche\Backend\obj\Debug\net8.0\Backend.Frontend.Res.Resources.resources
+C:\Github\Projektwoche\Backend\obj\Debug\net8.0\Backend.csproj.GenerateResource.cache
+C:\Github\Projektwoche\Backend\obj\Debug\net8.0\Backend.GeneratedMSBuildEditorConfig.editorconfig
+C:\Github\Projektwoche\Backend\obj\Debug\net8.0\Backend.AssemblyInfoInputs.cache
+C:\Github\Projektwoche\Backend\obj\Debug\net8.0\Backend.AssemblyInfo.cs
+C:\Github\Projektwoche\Backend\obj\Debug\net8.0\Backend.csproj.CoreCompileInputs.cache
+C:\Github\Projektwoche\Backend\obj\Debug\net8.0\Backend.MvcApplicationPartsAssemblyInfo.cs
+C:\Github\Projektwoche\Backend\obj\Debug\net8.0\Backend.MvcApplicationPartsAssemblyInfo.cache
+C:\Github\Projektwoche\Backend\obj\Debug\net8.0\Backend.sourcelink.json
