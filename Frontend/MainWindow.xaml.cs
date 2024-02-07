@@ -14,57 +14,86 @@ namespace ProjektWocheChat
 
         private void RegisterButton_Click(object sender, RoutedEventArgs e)
         {
-            // Holen Sie den Benutzernamen aus der TextBox
+            // Get the username from the TextBox
             string username = UsernameTextBox.Text;
 
-            // Überprüfen Sie, ob der Benutzername nicht leer ist
+            // Check if the username is not empty
             if (!string.IsNullOrEmpty(username))
             {
-                // Fügen Sie den Benutzernamen zur ListBox der Online-Benutzer hinzu
+                // Add the username to the Online Users ListBox
                 OnlineUsersListBox.Items.Add(username);
 
-                // Zeigen Sie eine Erfolgsmeldung an
-                MessageBox.Show($"Benutzer {username} erfolgreich registriert!");
+                // Show a success message
+                MessageBox.Show($"User {username} successfully registered!");
 
-                // Wechseln Sie zur Chat-Seite (Setzen Sie die Sichtbarkeiten der Grids)
+                // Switch to the Chat page (Set the visibilities of the Grids)
                 LoginGrid.Visibility = Visibility.Collapsed;
                 ChatGrid.Visibility = Visibility.Visible;
             }
             else
             {
-                // Zeigen Sie eine Fehlermeldung an, wenn der Benutzername leer ist
-                MessageBox.Show("Bitte geben Sie einen Benutzernamen ein!");
+                // Show an error message if the username is empty
+                MessageBox.Show("Please enter a username!");
             }
         }
 
         private void LoginButton_Click(object sender, RoutedEventArgs e)
         {
-            // Holen Sie den Benutzernamen aus der TextBox
+            // Get the username from the TextBox
             string username = UsernameTextBox.Text;
 
-            // Überprüfen Sie, ob der Benutzername in der ListBox der Online-Benutzer enthalten ist
+            // Check if the username is in the Online Users ListBox
             if (OnlineUsersListBox.Items.Contains(username))
             {
-                // Zeigen Sie eine Erfolgsmeldung an
-                MessageBox.Show($"Benutzer {username} erfolgreich eingeloggt!");
+                // Show a success message
+                MessageBox.Show($"User {username} successfully logged in!");
 
-                // Wechseln Sie zur Chat-Seite (Setzen Sie die Sichtbarkeiten der Grids)
+                // Switch to the Chat page (Set the visibilities of the Grids)
                 LoginGrid.Visibility = Visibility.Collapsed;
                 ChatGrid.Visibility = Visibility.Visible;
             }
             else
             {
-                // Zeigen Sie eine Fehlermeldung an, wenn der Benutzername nicht registriert ist
-                MessageBox.Show("Benutzername nicht registriert. Bitte registrieren Sie sich zuerst!");
+                // Show an error message if the username is not registered
+                MessageBox.Show("Username not registered. Please register first!");
             }
         }
 
         private void Send_Click(object sender, RoutedEventArgs e)
         {
-            // Holen Sie die eingegebene Nachricht aus dem TextBox
+            // Get the entered message from the TextBox
             string message = MessageTextBox.Text;
 
-            // Überprüfen Sie, ob die Nachricht nicht leer ist
+            // Check if the message is not empty
             if (!string.IsNullOrEmpty(message))
             {
-                // Erstellen Sie ein neues ListBoxItem für die Nachricht
+                // Create a new ListBoxItem for the message
+                ListBoxItem messageItem = new ListBoxItem();
+                messageItem.Content = message;
+
+                // Set the appearance of the ListBoxItem (blue background)
+                messageItem.Background = Brushes.LightBlue;
+                messageItem.Padding = new Thickness(5);
+
+                // Add the ListBoxItem to the ChatListBox
+                ChatListBox.Items.Add(messageItem);
+
+                // Clear the text in the MessageTextBox after sending
+                MessageTextBox.Clear();
+            }
+        }
+
+        private void MessageTextBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            // Check if the Enter key is pressed without the Shift modifier
+            if (e.Key == Key.Enter && (Keyboard.Modifiers & ModifierKeys.Shift) == 0)
+            {
+                // Call the Send_Click method to handle sending the message
+                Send_Click(sender, e);
+
+                // Set Handled to true to prevent the default behavior of Enter key
+                e.Handled = true;
+            }
+        }
+    }
+}

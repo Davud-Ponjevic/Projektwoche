@@ -8,3 +8,13 @@ C:\Users\antho\OneDrive\Dokumente\GitHub\Projektwoche\Frontend\obj\Debug\net8.0-
 C:\Users\antho\OneDrive\Dokumente\GitHub\Projektwoche\Frontend\obj\Debug\net8.0-windows\Frontend.AssemblyInfo.cs
 C:\Users\antho\OneDrive\Dokumente\GitHub\Projektwoche\Frontend\obj\Debug\net8.0-windows\Frontend.csproj.CoreCompileInputs.cache
 C:\Users\antho\OneDrive\Dokumente\GitHub\Projektwoche\Frontend\obj\Debug\net8.0-windows\Frontend.sourcelink.json
+C:\Users\antho\OneDrive\Dokumente\GitHub\Projektwoche\Frontend\bin\Debug\net8.0-windows\Frontend.exe
+C:\Users\antho\OneDrive\Dokumente\GitHub\Projektwoche\Frontend\bin\Debug\net8.0-windows\Frontend.deps.json
+C:\Users\antho\OneDrive\Dokumente\GitHub\Projektwoche\Frontend\bin\Debug\net8.0-windows\Frontend.runtimeconfig.json
+C:\Users\antho\OneDrive\Dokumente\GitHub\Projektwoche\Frontend\bin\Debug\net8.0-windows\Frontend.dll
+C:\Users\antho\OneDrive\Dokumente\GitHub\Projektwoche\Frontend\bin\Debug\net8.0-windows\Frontend.pdb
+C:\Users\antho\OneDrive\Dokumente\GitHub\Projektwoche\Frontend\obj\Debug\net8.0-windows\Frontend.dll
+C:\Users\antho\OneDrive\Dokumente\GitHub\Projektwoche\Frontend\obj\Debug\net8.0-windows\refint\Frontend.dll
+C:\Users\antho\OneDrive\Dokumente\GitHub\Projektwoche\Frontend\obj\Debug\net8.0-windows\Frontend.pdb
+C:\Users\antho\OneDrive\Dokumente\GitHub\Projektwoche\Frontend\obj\Debug\net8.0-windows\Frontend.genruntimeconfig.cache
+C:\Users\antho\OneDrive\Dokumente\GitHub\Projektwoche\Frontend\obj\Debug\net8.0-windows\ref\Frontend.dll
