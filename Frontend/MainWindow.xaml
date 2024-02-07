@@ -1,0 +1,21 @@
+﻿<Window x:Class="Frontend.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Messenger App" Height="350" Width="500">
+    <Grid>
+        <!-- Login Panel -->
+        <StackPanel x:Name="loginPanel" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <TextBlock Text="Benutzername:"/>
+            <TextBox x:Name="usernameTextBox" Margin="0,0,0,10"/>
+            <Button Content="Login" Click="LoginButton_Click"/>
+        </StackPanel>
+
+        <!-- Chat Panel -->
+        <StackPanel x:Name="chatPanel" VerticalAlignment="Center" HorizontalAlignment="Center" Visibility="Collapsed">
+            <ListBox x:Name="chatListBox" Height="200" Width="400" Margin="0,0,0,10"/>
+            <TextBox x:Name="messageTextBox" Width="300" Margin="0,0,0,10"/>
+            <Button Content="Senden" Click="SendButton_Click"/>
+            <Button Content="Logout" Click="LogoutButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
