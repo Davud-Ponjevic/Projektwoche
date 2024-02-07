@@ -1,11 +1,17 @@
-﻿using Backend.Models;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
+using Backend.Models; // Assuming Message class is defined in this namespace
+using Microsoft.EntityFrameworkCore; // Assuming DbContext is defined in this namespace
 
 namespace Backend.Controllers
 {
-    public class MessagesController
+    public class MessagesController : Controller
     {
-        private object _context;
+        private readonly DbContext _context;
+
+        public MessagesController(DbContext context)
+        {
+            _context = context;
+        }
 
         [HttpPost("send")]
         public IActionResult SendMessage([FromBody] Message message)
@@ -16,16 +22,15 @@ namespace Backend.Controllers
                 message.Timestamp = DateTime.Now;
 
                 // Fügen Sie die Nachricht zur Datenbank hinzu
-                _context.Messages.InsertOne(message);
+                _context.Set<Message>().Add(message);
+                _context.SaveChanges();
 
                 return Ok("Message sent successfully");
             }
             catch (Exception ex)
             {
-                return BadRequestResult($"Error sending message: {ex.Message}");
+                return BadRequest($"Error sending message: {ex.Message}");
             }
         }
-
-
     }
 }

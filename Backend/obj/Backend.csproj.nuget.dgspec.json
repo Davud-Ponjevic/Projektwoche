@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Github\\Projektwoche\\Backend\\Backend.csproj": {}
+    "C:\\Users\\antho\\OneDrive\\Dokumente\\GitHub\\Projektwoche\\Backend\\Backend.csproj": {}
   },
   "projects": {
-    "C:\\Github\\Projektwoche\\Backend\\Backend.csproj": {
+    "C:\\Users\\antho\\OneDrive\\Dokumente\\GitHub\\Projektwoche\\Backend\\Backend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Github\\Projektwoche\\Backend\\Backend.csproj",
+        "projectUniqueName": "C:\\Users\\antho\\OneDrive\\Dokumente\\GitHub\\Projektwoche\\Backend\\Backend.csproj",
         "projectName": "Backend",
-        "projectPath": "C:\\Github\\Projektwoche\\Backend\\Backend.csproj",
-        "packagesPath": "C:\\Users\\davud\\.nuget\\packages\\",
-        "outputPath": "C:\\Github\\Projektwoche\\Backend\\obj\\",
+        "projectPath": "C:\\Users\\antho\\OneDrive\\Dokumente\\GitHub\\Projektwoche\\Backend\\Backend.csproj",
+        "packagesPath": "C:\\Users\\antho\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\antho\\OneDrive\\Dokumente\\GitHub\\Projektwoche\\Backend\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\davud\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\antho\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -45,6 +45,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
             "MongoDB.Driver": {
               "target": "Package",
               "version": "[2.23.1, )"
@@ -73,7 +77,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

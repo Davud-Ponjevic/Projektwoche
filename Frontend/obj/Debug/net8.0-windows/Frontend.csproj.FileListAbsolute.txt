@@ -1,0 +1,10 @@
+C:\Users\antho\OneDrive\Dokumente\GitHub\Projektwoche\Frontend\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\antho\OneDrive\Dokumente\GitHub\Projektwoche\Frontend\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\antho\OneDrive\Dokumente\GitHub\Projektwoche\Frontend\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\antho\OneDrive\Dokumente\GitHub\Projektwoche\Frontend\obj\Debug\net8.0-windows\Frontend_MarkupCompile.cache
+C:\Users\antho\OneDrive\Dokumente\GitHub\Projektwoche\Frontend\obj\Debug\net8.0-windows\Frontend.g.resources
+C:\Users\antho\OneDrive\Dokumente\GitHub\Projektwoche\Frontend\obj\Debug\net8.0-windows\Frontend.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\antho\OneDrive\Dokumente\GitHub\Projektwoche\Frontend\obj\Debug\net8.0-windows\Frontend.AssemblyInfoInputs.cache
+C:\Users\antho\OneDrive\Dokumente\GitHub\Projektwoche\Frontend\obj\Debug\net8.0-windows\Frontend.AssemblyInfo.cs
+C:\Users\antho\OneDrive\Dokumente\GitHub\Projektwoche\Frontend\obj\Debug\net8.0-windows\Frontend.csproj.CoreCompileInputs.cache
+C:\Users\antho\OneDrive\Dokumente\GitHub\Projektwoche\Frontend\obj\Debug\net8.0-windows\Frontend.sourcelink.json
